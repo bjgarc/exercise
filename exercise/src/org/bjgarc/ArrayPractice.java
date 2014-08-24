@@ -10,7 +10,7 @@ import java.util.Vector;
 public class ArrayPractice {
     public static void main( String[] args )
     {
-    	ArrayPractice app = new ArrayPractice();
+    	//ArrayPractice app = new ArrayPractice();
     	
     	//app.sortChars2();
     	//app.exchangeSort();
