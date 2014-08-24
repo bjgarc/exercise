@@ -4,6 +4,7 @@ import java.util.Iterator;
 import java.util.Vector;
 
 public class Vectors {
+	
 	public static void main(String[] args) {
 		String[] letters = {"A", "C", "D", "X", "F", "D", "B", "B", "A", "D"};
 		Vector<String> vec = new Vector<String>();

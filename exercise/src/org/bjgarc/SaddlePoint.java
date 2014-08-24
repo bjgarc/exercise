@@ -2,6 +2,12 @@ package org.bjgarc;
 
 public class SaddlePoint {
 	
+	/*
+	 * Write a program to search for the "saddle points" in a square 
+	 * matrix of integers. A saddle point is a cell whose value is 
+	 * greater than or equal to any in its row, and less than or equal 
+	 * to any in its column.
+	 */
 	static int[][] theArray = 
 			{{24,21,32,41,25},
 			{25,33,43,14,31},
