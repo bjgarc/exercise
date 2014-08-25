@@ -8,18 +8,6 @@ import java.util.List;
 import java.util.Vector;
 
 public class ArrayPractice {
-    public static void main( String[] args )
-    {
-    	//ArrayPractice app = new ArrayPractice();
-    	
-    	//app.sortChars2();
-    	//app.exchangeSort();
-    	//app.sortAlphabetically();
-    	//app.sortArrayList();
-    	//app.bubbleSort();
-    	
-    	manualSort();
-    }
     
     public static void manualSort() {
     	String[] chars = new String[] {"B", "A", "B", "C", "C", "A", "M"};
@@ -40,7 +28,7 @@ public class ArrayPractice {
     	}
     }
     
-    public void sortAlphabetically() {
+    public static void sortAlphabetically() {
     	String[] chars = new String[] {"B", "A", "B", "C", "C", "A", "D"};
     	Arrays.sort(chars);  	
     	for(String temp: chars) {
@@ -48,7 +36,7 @@ public class ArrayPractice {
     	}
     }
     
-    public void sortArrayList() {
+    public static void sortArrayList() {
     	List<String> chars = new ArrayList<String>();
     	chars.add("B");
     	chars.add("A");
@@ -65,7 +53,7 @@ public class ArrayPractice {
     	
     }
     
-	public void bubbleSort() {
+	public static void bubbleSort() {
 
 		int[] num = {1,5,7,3,8,4,5}; 
 		int j;
@@ -104,7 +92,7 @@ public class ArrayPractice {
 	/* 
 	 * Use a hashmap for deplucation and an array for sort
 	 */
-	public void sortChars() {
+	public static void sortChars() {
     	String[] charsStrings = new String[] {"B", "A", "D", "D", "X", "A", "D", "R", "T", "V", "S", "W", "X", "R"};
     	HashMap<Integer, String> hash = new HashMap<Integer, String>();
     	int i = 1;
@@ -136,7 +124,7 @@ public class ArrayPractice {
 	/* 
 	 * Uses a vector to dedupe and sort - much more susinct and optimized
 	 */
-	public void sortChars2() {
+	public static void sortChars2() {
     	String[] charsStrings = new String[] {"B", "A", "D", "D", "X", "A", "D", "R", "T", "V", "S", "W", "X", "R"};
     	
     	Vector<String> vec = new Vector<String>();
@@ -157,7 +145,7 @@ public class ArrayPractice {
     	}   	
 	}
 	
-	public void exchangeSort() {
+	public static void exchangeSort() {
     	String[] arr = new String[] {"B", "A", "D", "D", "X", "A", "D", "R", "T", "V", "S", "W", "X", "R"};
 		String temp;
 		
