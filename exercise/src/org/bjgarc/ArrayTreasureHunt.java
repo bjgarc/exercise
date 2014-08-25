@@ -4,7 +4,7 @@ public class ArrayTreasureHunt {
 
 	public static void main(String[] args) {
 		/*
-		 * Do you like treasure hunts? In this problem you are to write a program to 
+		 * In this problem you are to write a program to 
 		 * explore the above array for a treasure. The values in the array are clues. 
 		 * Each cell contains an integer between 11 and 55; for each value the ten's 
 		 * digit represents the row number and the unit's digit represents the column
