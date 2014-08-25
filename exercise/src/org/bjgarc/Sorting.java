@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
 
-public class ArrayPractice {
+public class Sorting {
     
     public static void manualSort() {
     	String[] chars = new String[] {"B", "A", "B", "C", "C", "A", "M"};
@@ -162,5 +163,30 @@ public class ArrayPractice {
 			System.out.println(t);
 		}
 		//return arr;
+	}
+	
+	public static void vectorSort() {
+		String[] letters = {"A", "C", "D", "X", "F", "D", "B", "B", "A", "D"};
+		Vector<String> vec = new Vector<String>();
+		
+		for(int i=0; i<letters.length; i++) {
+			if (!vec.contains(letters[i])) {
+				vec.add(letters[i]);
+			}
+		}
+		
+		Iterator<String> it = vec.iterator();
+		while(it.hasNext()) {
+			System.out.println((String)it.next());
+		}
+		
+		for(int i=0; i<vec.capacity(); i++) {
+			for(int j=0; j<vec.capacity(); j++) {
+				if(vec.get(i).compareToIgnoreCase(vec.get(j)) < 0) {
+					//tmp = vec.get[i];
+					
+				}
+			}
+		}
 	}
 }

@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ArrayPracticeTest {
+public class SortingTest {
 
 	@Before
 	public void setUp() throws Exception {
@@ -13,37 +13,42 @@ public class ArrayPracticeTest {
 
 	@Test
 	public void testManualSort() {
-		ArrayPractice.manualSort();
+		Sorting.manualSort();
 	}
 
 	@Test
 	public void testSortAlphabetically() {
-		ArrayPractice.sortAlphabetically();
+		Sorting.sortAlphabetically();
 	}
 
 	@Test
 	public void testSortArrayList() {
-		ArrayPractice.sortArrayList();
+		Sorting.sortArrayList();
 	}
 
 	@Test
 	public void testBubbleSort() {
-		ArrayPractice.bubbleSort();
+		Sorting.bubbleSort();
 	}
 
 	@Test
 	public void testSortChars() {
-		ArrayPractice.sortChars();
+		Sorting.sortChars();
 	}
 
 	@Test
 	public void testSortChars2() {
-		ArrayPractice.sortChars2();
+		Sorting.sortChars2();
 	}
 
 	@Test
 	public void testExchangeSort() {
-		ArrayPractice.exchangeSort();
+		Sorting.exchangeSort();
+	}
+	
+	@Test
+	public void testVectorSort() {
+		Sorting.vectorSort();
 	}
 
 }

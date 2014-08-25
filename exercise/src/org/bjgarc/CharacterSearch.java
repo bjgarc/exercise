@@ -1,29 +1,11 @@
 package org.bjgarc;
 
-
-public class ArrayStructures {
-
+public class CharacterSearch {
+	
 	private int[] theArray = new int[50];
 	private int arraySize = 10;
 	
-	public static void main(String[] args) {
-		ArrayStructures arrays = new ArrayStructures();
-		arrays.generateRandomArray();
-		//arrays.printArray();
-		//arrays.deleteAtIndex(6);
-		//arrays.printArray();
-		//arrays.linearSearch(11);
-		//arrays.addValue(77);
-		arrays.binarySearch(11);
-		//arrays.bSearch(11);
-		arrays.printArray();
-		//arrays.bubbleSort();
-		//arrays.printArray();
-		//System.out.println(arrays.isValueInArray(11));
-	}
-	
 	public int[] generateRandomArray() {
-		//theArray[0] = 11;
 		for (int i = 0; i < arraySize; i++) {
 			theArray[i] = (int) ((Math.random()*9) + 10);
 		}
@@ -118,17 +100,5 @@ public class ArrayStructures {
 			}
 		}
 	}
-	
-	public void bubbleSort() {
 
-		for(int i = arraySize -1; i > 1; i--) {  //loop through the array based on the size of the array
-			for(int j = 1; j < arraySize; j++) { //check each element in the array for position
-				if(theArray[j-1] < theArray[j]) {
-					int temp = theArray[j-1];
-					theArray[j-1] = theArray[j];
-					theArray[j] = temp;
-				}
-			}
-		}
-	}
 }
