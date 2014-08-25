@@ -1,4 +1,4 @@
-package org.bjgarc.practice.db;
+package org.bjgarc.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
